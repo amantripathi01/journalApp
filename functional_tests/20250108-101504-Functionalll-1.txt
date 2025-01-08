@@ -1,0 +1,45 @@
+Functional Test Cases:
+
+1. Test Case: Verify the ability to upload a Jira ticket as a PDF for functional testing.
+   - Input: Jira ticket in PDF format
+   - Expected Output: Jira ticket successfully uploaded
+   - Edge Cases: Try uploading a non-PDF file, an empty file, or a file that exceeds the maximum size limit
+
+2. Test Case: Verify the support for limited document types initially.
+   - Input: Different types of documents (PDF, DOCX, TXT)
+   - Expected Output: Only PDF files should be uploaded successfully
+   - Edge Cases: Try uploading unsupported file types like PNG, JPG, etc
+
+3. Test Case: Verify the functionality of the upload option in Functional Testing as an alternative to linking with Jira or Azure Devops.
+   - Input: Jira ticket in PDF format
+   - Expected Output: The system should successfully upload the Jira ticket without requiring a link to Jira or Azure Devops
+
+4. Test Case: Verify the file is correctly sent as an array of object with fileName and content and prompt type from approostio side.
+   - Input: Jira ticket in PDF format
+   - Expected Output: The system should correctly recognize the fileName, content, and prompt type
+
+5. Test Case: Verify that pdf parsing is done correctly.
+   - Input: Jira ticket in PDF format
+   - Expected Output: The system should successfully parse the PDF and extract all the necessary information
+
+6. Test Case: Verify the regex based approach to fetch the details like description, title, and comments.
+   - Input: Jira ticket in PDF format
+   - Expected Output: The system should correctly fetch the description, title, and comments using regex
+
+Non-Functional Test Cases:
+
+1. Test Case: Check the performance of the system by uploading multiple Jira tickets as PDFs at the same time.
+   - Input: Multiple Jira tickets in PDF format
+   - Expected Output: The system should be able to handle the load and upload all the tickets without any errors
+
+2. Test Case: Check the system's resilience by trying to upload a corrupted or password-protected PDF.
+   - Input: Corrupted or password-protected PDF
+   - Expected Output: The system should gracefully handle the error and notify the user
+
+3. Test Case: Check the user-friendliness of the upload interface.
+   - Input: N/A
+   - Expected Output: The upload interface should be intuitive and easy to use
+
+4. Test Case: Verify the system's security by checking if any unauthorized user can upload a Jira ticket.
+   - Input: Unauthorized user attempts to upload a Jira ticket
+   - Expected Output: The system should prevent the unauthorized user from uploading the ticket.
