@@ -1,0 +1,53 @@
+Functional Test Cases:
+
+1. Test Case: Verify the ability to upload a Jira ticket as a PDF for functional testing.
+   - Input: Jira ticket in PDF format
+   - Expected Output: Jira ticket successfully uploaded
+   - Edge Cases: Try uploading a non-PDF file, an empty file, or a file that exceeds the maximum size limit
+
+2. Test Case: Validate the support for limited document types initially.
+   - Input: Different types of documents (PDF, DOCX, TXT)
+   - Expected Output: Only PDF files should be uploaded successfully
+   - Edge Cases: Try uploading unsupported file types like PNG, JPG, etc
+
+3. Test Case: Check the functionality of the option for uploading Jira tickets in Functional Testing as an alternative to linking with Jira or Azure Devops.
+   - Input: Jira ticket in PDF format
+   - Expected Output: Jira ticket should be successfully uploaded and linked in the Functional Testing platform
+   - Edge Cases: Try to link with Jira or Azure Devops after uploading the Jira ticket
+
+4. Test Case: Confirm that the file is sent as an array of objects with fileName, content, and prompt type from the approostio side.
+   - Input: File with specific fileName, content, and prompt type
+   - Expected Output: File should be successfully sent with all its properties
+   - Edge Cases: Try sending a file with missing properties
+
+5. Test Case: Check if the PDF parsing is done correctly.
+   - Input: Jira ticket in PDF format
+   - Expected Output: All the details in the PDF should be correctly parsed
+   - Edge Cases: Try parsing a PDF with complex formatting or unusual characters
+
+Non-Functional Test Cases:
+
+1. Test Case: Evaluate the performance of the upload functionality under high load.
+   - Input: Multiple Jira tickets in PDF format
+   - Expected Output: All files should be uploaded successfully without any delay or error
+   - Edge Cases: Try uploading a large number of files at the same time
+
+2. Test Case: Assess the security of the upload functionality.
+   - Input: Jira ticket in PDF format
+   - Expected Output: The file should be uploaded securely with no data leaks
+   - Edge Cases: Try uploading a file with malicious content
+
+3. Test Case: Check the usability of the upload functionality.
+   - Input: Jira ticket in PDF format
+   - Expected Output: The upload process should be straightforward and user-friendly
+   - Edge Cases: Test the functionality with users of varying technical expertise
+
+4. Test Case: Verify the reliability of the upload functionality.
+   - Input: Jira ticket in PDF format
+   - Expected Output: The upload functionality should work consistently across multiple attempts
+   - Edge Cases: Try uploading files intermittently or with unstable network connections
+
+5. Test Case: Test the compatibility of the upload functionality across different browsers and platforms.
+   - Input: Jira ticket in PDF format
+   - Expected Output: The upload functionality should work seamlessly across all tested browsers and platforms
+   - Edge Cases: Try using outdated or uncommon browsers/platforms.
